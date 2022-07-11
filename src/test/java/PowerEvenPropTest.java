@@ -34,6 +34,8 @@ public class PowerEvenPropTest {
 
     @Test
     public void powerEvenPropTest() {
+        System.out.println(">>> In powerEvenPropTest, checking env var 'LOGIN'="
+                + System.getProperty("LOGIN"));
         System.out.println(">> params: base=" + base + ", power=" + power);
         assertEquals(expectedResult, BasicAlgorithms.powerWithEvenPowerProperty(base, power));
     }
